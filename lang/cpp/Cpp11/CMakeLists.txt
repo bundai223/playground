@@ -1,9 +1,11 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 # project name
 SET(PROJECT_NAME cpp11)
 
 SET(CMAKE_CXX_COMPILER clang++)
+SET(CMAKE_CXX_FLAGS "-std=c++11")
+#SET(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 
 # src files
 SET(SRC_FILES
@@ -45,6 +47,8 @@ ELSEIF(UNIX)
 
     SET(INCLUDE_DIR
         ${INCLUDE_DIR}
+        /usr/include/c++/4.7/
+        /usr/include/i386-linux-gnu/c++/4.7/
     )
 
 #    SET(LINK_LIBS
