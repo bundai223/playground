@@ -4,8 +4,8 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 SET(PROJECT_NAME cpp11)
 
 SET(CMAKE_CXX_COMPILER clang++)
-SET(CMAKE_CXX_FLAGS "-std=c++11")
-#SET(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+#SET(CMAKE_CXX_FLAGS "-std=c++11")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 
 # src files
 SET(SRC_FILES
