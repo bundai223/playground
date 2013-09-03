@@ -12,9 +12,12 @@ if __name__ == "__main__":
         sys.exit()
 
     num = 1
+    sumNum = num
     bit = int(argv[1],10)
-    for index in range(bit):
+    for index in range(bit - 1):
         num *= 2
-#         print(str(index) + " : " + str(num))
+        sumNum += num
+        print(str(index) + " : " + str(num))
 
-    print(str(bit) + " : " + str(num))
+    print(str(bit) + " : " + str(sumNum))
+
