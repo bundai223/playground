@@ -1,6 +1,5 @@
-#
-# print
-puts "Hello World."
+# !/usr/bin/ruby
+# fileencoding utf-8
 
 puts "a"
 a = [1, 4, 6, 10]
@@ -15,10 +14,8 @@ b.each{|n|
 
 puts "test.rb"
 open( "test.rb", "r") {|f|
-    lines = f.lines
-
     puts "********************"
-    lines.each {|line|
+    f.each_line.each {|line|
         puts "* " + line
     }
     puts "********************"
