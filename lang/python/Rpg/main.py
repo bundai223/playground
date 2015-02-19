@@ -6,7 +6,7 @@ from Player import Player
 
 objList = []
 objList.append(Map(10, 10))
-objList.append(Player())
+objList.append(Player(0, 0))
 
 while True:
     for obj in objList:

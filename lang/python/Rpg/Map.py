@@ -7,7 +7,7 @@ class Res():
     WALL_VERTICAL = "|"
     WALL_HORIZONTAL = "-"
     WALL_CORNER = "+"
-    SPACE = " "
+    SPACE = "."
 
 
 class Map(fieldObj):
