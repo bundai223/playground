@@ -43,8 +43,11 @@ class Map(fieldObj):
         pass
 
     def render(self):
+        print(self._getRenderStr())
+
+    def _getRenderStr(self):
+        mapStr = ""
         for gridRow in self.mapGrid:
-            rowStr = ""
             for grid in gridRow:
                 gridChr = Res.SPACE
                 if grid == Map.CORNER:
@@ -54,6 +57,7 @@ class Map(fieldObj):
                         gridChr = Res.WALL_VERTICAL
                     else:
                         gridChr = Res.WALL_HORIZONTAL
-                rowStr = rowStr + gridChr
+                mapStr = mapStr + gridChr
+            mapStr = mapStr + "\n"
 
-            print(rowStr)
+        return mapStr
